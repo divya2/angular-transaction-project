@@ -10,7 +10,7 @@ import {
 import { Observable, of } from 'rxjs';
 import { delay } from 'rxjs/operators';
 
-// array in local storage for registered users
+// local storage user transaction
 const transactionsKey = 'transactions';
 let transactions = JSON.parse(localStorage.getItem(transactionsKey)) || [
   {
@@ -31,7 +31,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
     request: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
-    const { url, method, headers, body } = request;
+    const { url, method, body } = request;
 
     return handleRoute();
 
@@ -69,8 +69,6 @@ export class FakeBackendInterceptor implements HttpInterceptor {
 
       return ok();
     }
-
-    // helper functions
 
     function ok(body?) {
       return of(new HttpResponse({ status: 200, body })).pipe(delay(500)); // delay observable to simulate server api call

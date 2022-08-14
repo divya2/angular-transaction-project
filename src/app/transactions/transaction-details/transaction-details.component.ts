@@ -47,7 +47,7 @@ export class TransactionDetailsComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
 
-    // stop here if form is invalid
+    // if form is invalid rreturn
     if (this.form.invalid) {
       return;
     }
