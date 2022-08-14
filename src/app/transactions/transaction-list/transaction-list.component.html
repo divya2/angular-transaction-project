@@ -1,25 +1,30 @@
-<h1>Transactions List</h1>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th style="width: 30%">Id</th>
-      <th style="width: 30%">Date</th>
-      <th style="width: 30%">Comments</th>
-      <th style="width: 10%">Action</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let transaction of transactions">
-      <td>{{ transaction.id }}</td>
-      <td>
-        {{ transaction.date }}
-      </td>
-      <td>{{ transaction.comments }}</td>
-      <td>
-        <a routerLink="transactionEdit/{{ transaction.id }}" class="nav-link"
-          >View</a
-        >
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div role="table" aria-label="Transaction List">
+  <h1>Transactions List</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th style="width: 30%">Id</th>
+        <th style="width: 30%">Date</th>
+        <th style="width: 30%">Comments</th>
+        <th style="width: 10%">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transaction of transactions">
+        <td>{{ transaction.id }}</td>
+        <td>
+          {{ transaction.date }}
+        </td>
+        <td>{{ transaction.comments }}</td>
+        <td>
+          <a
+            aria-label="View Transaction"
+            routerLink="transactionEdit/{{ transaction.id }}"
+            class="nav-link"
+            >View</a
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
