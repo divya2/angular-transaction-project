@@ -14,4 +14,13 @@ this project includes accesibility for better user experience.
 
 3. Start the dev server. Navigate to `http://localhost:4200/`.
 
-# Documentation
+# Documentation details
+
+![transaction-list-home] https://github.com/divya2/angular-transaction-project/blob/main/src/assests/img/1_transaction-list-home-page.PNG
+![transaction-list-view-accesibility] https://github.com/divya2/angular-transaction-project/blob/main/src/assests/img/2_tansaction-view-accessibility.PNG
+![transaction-details-page] https://github.com/divya2/angular-transaction-project/blob/main/src/assests/img/3_transaction-details-page.PNG
+![transaction-details-comments-validation] https://github.com/divya2/angular-transaction-project/blob/main/src/assests/img/4_transaction-details-comments-validation.PNG
+![transaction-details-comments-updated] https://github.com/divya2/angular-transaction-project/blob/main/src/assests/img/5_transaction-details-page-updated.PNG
+![transaction-list-page-afterUpdation] https://github.com/divya2/angular-transaction-project/blob/main/src/assests/img/6_transaction-list-page-afterupdation.PNG
+
+# End of project
